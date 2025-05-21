@@ -153,4 +153,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-© 2025 FinSight | Developed by [Your Name]
+© 2025 FinSight | Developed by Oluwabukolami
