@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+ 
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --primary: 267 75% 58%;
+    --primary-foreground: 0 0% 100%;
+ 
+    --secondary: 267 35% 25%;
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+ 
+    --accent: 267 40% 50%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 267 75% 58%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+ 
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+ 
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --primary: 267 75% 58%;
+    --primary-foreground: 0 0% 100%;
+ 
+    --secondary: 267 35% 25%;
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+ 
+    --accent: 267 40% 50%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 267 75% 58%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b3b3b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* Glassmorphism effects */
+.glass {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glow effects */
+.glow-purple {
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+}
+
+/* Tech pattern background */
+.tech-pattern {
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(139, 92, 246, 0.15) 2px, transparent 0),
+    radial-gradient(circle at 75px 75px, rgba(139, 92, 246, 0.15) 2px, transparent 0);
+  background-size: 100px 100px;
+  position: relative;
+  z-index: 0;
+} 
